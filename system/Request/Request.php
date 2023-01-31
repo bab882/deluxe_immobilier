@@ -2,9 +2,11 @@
 
 namespace System\Request;
 
+use System\Request\Traits\HasFileValidationRules;
+
 class Request
 {
-    use HasValidationRules, HasfileValidationRules, HasRunValidation;
+    use HasValidationRules, HasFileValidationRules, HasRunValidation;
 
     protected $errorExist = false;
     protected $request;
